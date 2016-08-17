@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+
+NOTE:keep the text in proper order ij th chart
+2.Think whether you have to keep multiple files for diff radio buttons or single file ..
+3.Code accordingly to generate teh radra chart.
+
+
+
+
+
+Community Connectedness2,0.58
+Community Connectedness3,0.3
+Community Connectedness4,0.25
+
+
+Cultural Connectedness2,0.5
+Cultural Connectedness3,0.3
+Cultural Connectedness4,0.45

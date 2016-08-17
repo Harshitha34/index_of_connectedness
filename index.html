@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Index of Connectedness</title>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript">
+	
+	function is_checked(){
+	 var McKenzie=document.getElementById('McKenzie').checked;
+	 var BayStreet=document.getElementById('BayStreet').checked;
+	 var GordonHead=document.getElementById('GordonHead').checked;
+	 var Downtownschools=document.getElementById('Downtownschools').checked;
+	 
+	 if(McKenzie==false && BayStreet==false && GordonHead==false && Downtownschools==false)
+	 	alert("Please select atleast one school to display the Radar Chart");
+	 			
+	else{
+					/*var val=document.createElement("value");
+					if(McKenzie==true && BayStreet==false && GordonHead==false && Downtownschools==false)
+						 val=document.getElementById('McKenzie').value;
+					else (McKenzie==false && BayStreet==false && GordonHead==true && Downtownschools==false)
+						 val=document.getElementById('GordonHead').value;*/
+	 				var script=document.createElement("script");
+					script.setAttribute("type","text/javascript");
+					script.setAttribute("src","RadarChart.js")
+					document.getElementsByTagName("head")[0].appendChild(script);
+		}
+
+	}
+</script>
+	<div id="script">
+					<style>
+						body {
+		  						overflow: hidden;
+		  						margin: 0;
+		  						font-size: 14px;
+		  						font-family: "Helvetica Neue", Helvetica;
+							}
+
+						#chart {
+		  						position: absolute;
+		  						top: 50px;
+		  						left: 100px;
+							}	
+				</style>
+	</div>
+</head>
+  <body>
+  	<div id="body">
+	  <div id="chart"></div>
+    </div>
+   
+  	<form action ="" method="get" onclick="is_checked()">
+  		<p>Please select the area of school you are looking for</p>
+  		<input type="radio"  name="McKenzie" value="McKenzie" id="McKenzie"/>McKenzie</br>
+  		<input type="radio"  name="BayStreet" value="BayStreet" id="BayStreet"/>BayStreet</br>
+  		<input type="radio"  name="GordonHead" value="GordonHead" id="GordonHead"/>GordonHead</br>
+  		<input type="radio"  name="Downtownschools" value="Downtownschools" id="Downtownschools"/>Downtown schools</br></br>
+  		<input type="button"  onclick="radarchart();" value="Explore Radar chart"/></br>
+  		
+	</form><br/><br/>
+	
+</body>
+</html>

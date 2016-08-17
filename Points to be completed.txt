@@ -1,0 +1,12 @@
+1.axis should be same for all graphs--resolved
+
+2.able to slect two schools and generate two graphs(on one diagram)
+3.two diagrams side by side
+4.user survey.
+5.get the circles for each individual (diff colors for each individual)
+6.get rid of the blue filling
+7.buttons for individual study and group tudy
+8.ollect data for user survye and sent it to server  like a file with data like parent pressed option a
+9.make the webpage interactive(look and fel should be changed).
+
+

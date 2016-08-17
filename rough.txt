@@ -1,0 +1,13 @@
+Purpose of the article stated.key arguments are presented.Clearly presents the conclusion and supports it.Clearly explains the relationship between the article and software architecture.Some Grammar concerns.
+
+
+
+var d=[];
+d3.csv("mydata.csv",function(data){//new
+			//data.forEach(function(p){//new
+			//p.value=+p.value;//new
+			//});//new*/});//NEW
+			data.map(function(p){
+			return [p["axis"],+p["value"]];
+ 				d=data;
+			});
